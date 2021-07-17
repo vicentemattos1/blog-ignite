@@ -1,6 +1,6 @@
 import { GetStaticProps } from 'next';
 import Prismic from '@prismicio/client';
-import { format, parseISO } from 'date-fns';
+import { format } from 'date-fns';
 import ptBR from 'date-fns/locale/pt-BR';
 import { FaRegCalendar, FaRegUser } from 'react-icons/fa';
 import Link from 'next/link';
@@ -29,7 +29,7 @@ interface HomeProps {
   postsPagination: PostPagination;
 }
 
-export default function Home({ postsPagination }: HomeProps) {
+export default function Home({ postsPagination }: HomeProps): JSX.Element {
   const formatadedPosts = postsPagination.results.map(post => {
     return {
       ...post,
