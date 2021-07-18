@@ -1,10 +1,48 @@
 .banner {
-  width: 100vw;
+  width: 100%;
   height: auto;
+  max-height: 45vh;
+  object-fit: cover;
 }
 
 .container {
   max-width: 1120px;
   margin: 0 auto;
   padding: 0 2rem;
+}
+
+.post {
+  max-width: 720px;
+  margin: 5rem auto 0;
+
+  h1 {
+    font-weight: 700;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .postInfo {
+    color: var(--gray-300);
+    font-size: 0.875rem;
+
+    svg {
+      margin-right: 0.5rem;
+    }
+
+    span {
+      margin-left: 1.5rem;
+    }
+  }
+
+  .content {
+    h2 {
+      font-size: 2rem;
+      margin-top: 3rem;
+    }
+
+    p {
+      font-size: 1.125rem;
+      margin: 1rem 0;
+    }
+  }
 }
