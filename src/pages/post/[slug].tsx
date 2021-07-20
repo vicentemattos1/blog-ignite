@@ -54,7 +54,7 @@ export default function Post({ post }: PostProps): JSX.Element {
 
       <img src={post.data.banner.url} className={styles.banner} alt="" />
 
-      <main className={styles.container}>
+      <main className={commonStyles.container}>
         <article className={styles.post}>
           <h1>{post.data.title}</h1>
           <div className={styles.postInfo}>
